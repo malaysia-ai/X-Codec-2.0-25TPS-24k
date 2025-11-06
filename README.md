@@ -47,4 +47,4 @@ dataset.val.filelist="val-files.txt"
 
 ## Evaluation
 
-All scripts to evaluate SNAC, Encodec,DAC, Mimi, BigCodec, SpeechTokenizer, WavTokenizer, BiCodec, Uni-Codec, DistilCodec, X-Codec-2.0 baseline and X-Codec-2.0-25TPS-24k in [evaluation](evaluation).
+All scripts to evaluate SNAC, Encodec, DAC, Mimi, BigCodec, SpeechTokenizer, WavTokenizer, BiCodec, Uni-Codec, DistilCodec, Neucodec, X-Codec-2.0 baseline and X-Codec-2.0-25TPS-24k in [evaluation](evaluation).
