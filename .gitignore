@@ -13,3 +13,7 @@ hydra
 !prepare-audio-files.ipynb
 *.mp3
 *.pyc
+test-set
+*.wav
+*.pyc
+evaluation/test-set

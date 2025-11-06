@@ -1,8 +1,4 @@
-[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2502.04128)
- 
-# X-Codec-2.0
-
-Paper: LLaSA: Scaling Train-time and Inference-time Compute for LLaMA-based Speech Synthesis, originally from https://huggingface.co/HKUSTAudio/xcodec2
+# X-Codec-2.0-25TPS-24k: Improving X-Codec-2.0 for Multi-Lingual Speech, 25Hz Latent Rate and 24 kHz Sampling
 
 We scale up to 24k sample rate, also add 25 TPS.
 
@@ -44,7 +40,11 @@ wget https://huggingface.co/HKUSTAudio/xcodec2/resolve/main/ckpt/epoch%3D4-step%
 CUDA_VISIBLE_DEVICES="0,1" \
 python3 train.py log_dir=24k \
 train.trainer.devices=2 \
-dataset.train.filelist="/home/husein/ssd3/gemma3/audio-files.txt" \
+dataset.train.filelist="train-files.txt" \
 dataset.train.batch_size=20 \
-dataset.val.filelist="/home/husein/ssd3/gemma3/audio-files-test.txt"
+dataset.val.filelist="val-files.txt"
 ```
+
+## Evaluation
+
+All scripts to evaluate SNAC, Encodec,DAC, Mimi, BigCodec, SpeechTokenizer, WavTokenizer, BiCodec, Uni-Codec, DistilCodec, X-Codec-2.0 baseline and X-Codec-2.0-25TPS-24k in [evaluation](evaluation).
