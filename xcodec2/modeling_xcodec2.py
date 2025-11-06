@@ -1,12 +1,12 @@
 import torch
 import torch.nn as nn
 from transformers import PreTrainedModel
-from .configuration_bigcodec import BigCodecConfig
+from configuration_bigcodec import BigCodecConfig
 
 # 请确保这些模块路径是正确的
-from .vq.codec_encoder import CodecEncoder_Transformer
-from .vq.codec_decoder_vocos import CodecDecoderVocos
-from .vq.module import SemanticEncoder
+from vq.codec_encoder import CodecEncoder_Transformer
+from vq.codec_decoder_vocos import CodecDecoderVocos
+from vq.module import SemanticEncoder
 from transformers import AutoFeatureExtractor, Wav2Vec2BertModel
 import torch.nn.functional as F
 class XCodec2Model(PreTrainedModel):

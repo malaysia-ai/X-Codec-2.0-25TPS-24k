@@ -17,3 +17,5 @@ test-set
 *.wav
 *.pyc
 evaluation/test-set
+evaluation/xcodec2_25tps
+*.zip
