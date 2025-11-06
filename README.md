@@ -17,7 +17,7 @@ python3 -m venv xcodec
 ./xcodec/bin/python3 get_tsv.py
 ```
 
-Or you can prepare yourself the data, example, [example.txt],
+Or you can prepare yourself the data, example, [example.txt](example.txt),
 
 ```text
 /path/audio1.wav
