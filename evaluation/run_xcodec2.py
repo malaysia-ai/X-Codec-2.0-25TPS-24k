@@ -1,3 +1,9 @@
+"""
+codebook size: 65536
+nq: 1
+tps: 50
+"""
+
 import sys
 import os
 

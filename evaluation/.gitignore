@@ -1,6 +1,12 @@
+dac
+distilcodec
+encodec
+neucodec
 xcodec2_25tps
 xcodec2
 snac
 unicodec
 *.ckpt
 *.yaml
+test-test.json
+test-test

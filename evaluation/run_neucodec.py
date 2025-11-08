@@ -1,3 +1,9 @@
+"""
+codebook size: 65536
+nq: 1
+tps: 50
+"""
+
 from tqdm import tqdm
 from functools import partial
 from multiprocess import Pool
