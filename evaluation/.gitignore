@@ -1,10 +1,12 @@
 dac
 distilcodec
 encodec
+mimi
 neucodec
 xcodec2_25tps
 xcodec2
 snac
+speechtokenizer
 unicodec
 *.ckpt
 *.yaml

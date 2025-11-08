@@ -1,6 +1,7 @@
 """
-Codebook size:
-nq: 7
+codebook size: 1024
+nq: 9
+tps: 86
 """
 
 import os

@@ -1,3 +1,9 @@
+"""
+codebook size: 4096
+nq: 3
+tps: 27
+"""
+
 import os
 from tqdm import tqdm
 from functools import partial

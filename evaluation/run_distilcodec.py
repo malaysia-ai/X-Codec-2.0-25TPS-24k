@@ -1,6 +1,7 @@
 """
-wget https://huggingface.co/Yidiii/UniCodec_ckpt/resolve/main/unicode.ckpt
-wget https://raw.githubusercontent.com/mesolitica/UniCodec-fix/refs/heads/main/configs/unicodec_frame75_10s_nq1_code16384_dim512_finetune.yaml
+codebook size: 32768
+nq: 1
+tps: 93
 """
 
 import os
