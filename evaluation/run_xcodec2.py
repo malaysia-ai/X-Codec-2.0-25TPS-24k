@@ -4,13 +4,6 @@ nq: 1
 tps: 50
 """
 
-import sys
-import os
-
-parent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-parent_dir = os.path.join(parent_dir, 'xcodec2')
-sys.path.insert(0, parent_dir)
-
 from tqdm import tqdm
 from functools import partial
 from multiprocess import Pool
@@ -18,6 +11,7 @@ from glob import glob
 import librosa
 import soundfile as sf
 import click
+import os
 
 def chunks(l, devices):
     chunk_size = len(l) // len(devices)
@@ -37,14 +31,11 @@ def loop(
     os.environ['CUDA_VISIBLE_DEVICES'] = str(device)
     
     import torch
-    import modeling_xcodec2
-    from modeling_xcodec2 import XCodec2Model
+    from xcodec2.modeling_xcodec2 import XCodec2Model
 
     torch.set_grad_enabled(False)
     model = XCodec2Model.from_pretrained('HKUSTAudio/xcodec2')
     _ = model.eval().cuda()
-
-    return
 
     for f in tqdm(files):
         y, sr = librosa.load(f, sr = 16000)
@@ -53,7 +44,6 @@ def loop(
         y_ = model.decode_code(codes)[0, 0].cpu()
         new_f = os.path.join(folder, os.path.split(f)[1]).replace('.mp3', '.wav')
         sf.write(new_f, y_, 16000)
-        break
 
 @click.command()
 @click.option('--folder')
