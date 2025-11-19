@@ -48,3 +48,14 @@ dataset.val.filelist="val-files.txt"
 ## Evaluation
 
 All scripts to evaluate SNAC, Encodec, DAC, Mimi, BigCodec, SpeechTokenizer, WavTokenizer, BiCodec, Uni-Codec, DistilCodec, Neucodec, X-Codec-2.0 baseline and X-Codec-2.0-25TPS-24k in [evaluation](evaluation).
+
+## Citation
+
+```
+@misc{myai2025improvingxcodec25hz,
+      title={Improving X-Codec-2.0 for Multi-Lingual Speech, 25Hz Latent Rate and 24 kHz Sampling}, 
+      author={Malaysia AI},
+      year={2025},
+      url={https://github.com/malaysia-ai/X-Codec-2.0-25TPS-24k},
+}
+```
