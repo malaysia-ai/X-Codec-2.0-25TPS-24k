@@ -1,6 +1,6 @@
 # X-Codec-2.0-25TPS-24k: Improving X-Codec-2.0 for Multi-Lingual Speech, 25Hz Latent Rate and 24 kHz Sampling
 
-We scale up to 24k sample rate, also add 25 TPS.
+We scale up to 24k sample rate, also add 25 TPS, technical preprint at https://github.com/malaysia-ai/research-paper/blob/main/xcodec2-25tps/neurips_2023.pdf
 
 ## Training
 
